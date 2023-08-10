@@ -1,11 +1,12 @@
-<script setup>
-
-</script>
-
 <template>
+  <page-container title="文章分类">
+    <template #extra>
+      <el-button type="primary"> 添加分类 </el-button>
+    </template>
 
+    主体部分
+  </page-container>
 </template>
-
-<style scoped>
-
-</style>
+<script setup>
+import PageContainer from "@/components/PageContainer.vue";
+</script>
