@@ -63,7 +63,6 @@ const register = async () => {
         <el-form-item prop="username">
           <el-input
               v-model="formModel.username"
-
               :prefix-icon="User"
               placeholder="请输入用户名">
           </el-input>
