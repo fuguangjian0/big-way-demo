@@ -59,6 +59,7 @@ const register = async () => {
       <el-form :rules="rules" :model="formModel" ref="form" size="large" autocomplete="off" v-if="isRegister">
         <el-form-item>
           <h1>注册</h1>
+
         </el-form-item>
         <el-form-item prop="username">
           <el-input
