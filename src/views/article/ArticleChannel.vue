@@ -50,18 +50,18 @@ const onSuccess = () => {
         <!-- row 就是 channelList 的一项， $index 下标 -->
         <template #default="{ row, $index }">
           <el-button
-              :icon="Edit"
-              circle
-              plain
-              type="primary"
-              @click="onEditChannel(row, $index)"
+            :icon="Edit"
+            circle
+            plain
+            type="primary"
+            @click="onEditChannel(row, $index)"
           ></el-button>
           <el-button
-              :icon="Delete"
-              circle
-              plain
-              type="danger"
-              @click="onDelChannel(row, $index)"
+            :icon="Delete"
+            circle
+            plain
+            type="danger"
+            @click="onDelChannel(row, $index)"
           ></el-button>
         </template>
       </el-table-column>

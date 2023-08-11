@@ -58,27 +58,27 @@ defineExpose({
 
 <template>
   <el-dialog
-      v-model="dialogVisible"
-      :title="formModel.id ? '编辑分类' : '添加分类'"
-      width="30%"
+    v-model="dialogVisible"
+    :title="formModel.id ? '编辑分类' : '添加分类'"
+    width="30%"
   >
     <el-form
-        ref="formRef"
-        :model="formModel"
-        :rules="rules"
-        label-width="100px"
-        style="padding-right: 30px"
+      ref="formRef"
+      :model="formModel"
+      :rules="rules"
+      label-width="100px"
+      style="padding-right: 30px"
     >
       <el-form-item label="分类名称" prop="cate_name">
         <el-input
-            v-model="formModel.cate_name"
-            placeholder="请输入分类名称"
+          v-model="formModel.cate_name"
+          placeholder="请输入分类名称"
         ></el-input>
       </el-form-item>
       <el-form-item label="分类别名" prop="cate_alias">
         <el-input
-            v-model="formModel.cate_alias"
-            placeholder="请输入分类别名"
+          v-model="formModel.cate_alias"
+          placeholder="请输入分类别名"
         ></el-input>
       </el-form-item>
     </el-form>
