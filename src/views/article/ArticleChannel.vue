@@ -9,4 +9,10 @@
 </template>
 <script setup>
 import PageContainer from "@/components/PageContainer.vue";
+import {artGetChannelsService} from "@/api/article";
+const channelList = ref([])
+const getChannelList = async () => {
+  const res = await artGetChannelsService()
+  channelList.value = res.data.data
+}
 </script>
